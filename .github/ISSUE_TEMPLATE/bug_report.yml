@@ -16,23 +16,8 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Reproduction Steps
-      description: >
-         What you did to make it happen.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Expected Results
-      description: >
-        What did you expect to happen?
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Actual Results
-      description: >
-        What actually happened?
+      label: Describe the issue
+      description: Describe what actually happened, and what you expected to happen.
     validations:
       required: true
   - type: textarea
@@ -53,14 +38,18 @@ body:
       description: Go into your flow launcher settings, go to the general section, and scroll down until you find the `Python Path` field. Copy and paste the value here.
     validations:
       required: true
-  - type: input
+  - type: textarea
     attributes:
       label: Flow Launcher Log File
       description: Use the `Open Log Location` command with the `System Commands` plugin to open the log file folder, and upload the newest file here.
-  - type: input
+    validations:
+      required: true
+  - type: textarea
     attributes:
       label: Flogin Log File
-      description: Use the `Flow Launcher UserData Folder` command with the `System Commands` plugin to open your userdata folder, go into the `Plugins` folder, then find the plugin and go into it. If the `flogin.log` file exists, upload it here.
+      description: Use the `Flow Launcher UserData Folder` command with the `System Commands` plugin to open your userdata folder, go into the `Plugins` folder, then find the plugin and go into it. If the `flogin.log` file exists, upload it here. Otherwise please state that it was not there.
+    validations:
+      required: true
   - type: checkboxes
     attributes:
       label: Checklist
