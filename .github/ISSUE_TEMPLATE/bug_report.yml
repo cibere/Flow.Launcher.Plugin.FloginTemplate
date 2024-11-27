@@ -38,7 +38,7 @@ body:
   - type: textarea
     attributes:
       label: Plugin Version
-      description: ...
+      description: Go into your flow launcher settings, go into the plugins section, click on the plugin, and at the bottom you should see something like `by author | Version x.x.x`, write that version here
     validations:
       required: true
   - type: textarea
@@ -53,6 +53,14 @@ body:
       description: Go into your flow launcher settings, go to the general section, and scroll down until you find the `Python Path` field. Copy and paste the value here.
     validations:
       required: true
+  - type: input
+    attributes:
+      label: Flow Launcher Log File
+      description: Use the `Open Log Location` command with the `System Commands` plugin to open the log file folder, and upload the newest file here.
+  - type: input
+    attributes:
+      label: Flogin Log File
+      description: Use the `Flow Launcher UserData Folder` command with the `System Commands` plugin to open your userdata folder, go into the `Plugins` folder, then find the plugin and go into it. If the `flogin.log` file exists, upload it here.
   - type: checkboxes
     attributes:
       label: Checklist
